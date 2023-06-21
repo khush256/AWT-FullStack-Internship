@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout4</title>
+    <style>
+         *{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        /* ROW 1 */
+        #r1 {
+            background-color: blue;
+            width: 100%;
+            padding-top: 20pt;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        #r1 div{
+    
+            float: left;
+            padding-top: 3px;
+            text-align: center;
+        }
+        #r1c1{
+            width: 50%;
+        }
+        #r1c2{
+            width:50%;
+        }
+
+        /* ROW 2 */
+        .r2, .r3, .r4, .r5 {
+            height: 130px;
+            margin-bottom: 20px;
+        }
+        
+        .r2 div,.r3 div,.r4 div, .r5 div{
+            background-color: aquamarine;
+            float: left;
+            width: 23.5%;
+            height: 130px;
+            margin-right: 2%;
+        }
+        #r2c4,#r3c4,#r4c4,#r5c4,#r6c3{
+            margin-right: 0;
+        }
+
+        .r6{
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        .r6 div{
+            background-color: brown;
+            height: 150px;
+            float: left;
+            width: 32%;
+            margin-right: 2%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        
+        .r7{
+            background-color: greenyellow;
+            padding-top: 5pt;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="r1">
+        <div id="r1c1">LOGO</div>
+        <div id="r1c2">Navigation</div>
+   </div>
+   <div class="r2">
+        <div id="r2c1"></div>
+        <div id="r2c2"></div>
+        <div id="r2c3"></div>
+        <div id="r2c4"></div>
+   </div>
+   <div class="r3">
+        <div id="r3c1"></div>
+        <div id="r3c2"></div>
+        <div id="r3c3"></div>
+        <div id="r3c4"></div>
+   </div>
+   <div class="r4"> 
+       <div id="r4c1"></div>
+       <div id="r4c2"></div>
+       <div id="r4c3"></div>
+       <div id="r4c4"></div>
+   </div>
+   <div class="r5">
+        <div id="r5c1"></div>
+        <div id="r5c2"></div>
+        <div id="r5c3"></div>
+        <div id="r5c4"></div>
+   </div>
+   <div class="r6">
+    <div id="r6c1">Box1</div>
+    <div id="r6c2">Box2</div>
+    <div id="r6c3">Box3</div>
+   </div>
+   <div class="r7">Footer</div>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout3</title>
+    <style>
+        * {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #r1 {
+            background-color: blue;
+            width: 100%;
+            padding-top: 20pt;
+            height: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #r2{
+            height: 500px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        #r2 div{
+            float: left;
+            width: 49%;
+            height: 500px;
+        }
+        #r2c1{
+            background-color: gray;
+            margin-right: 2%;
+        }
+        
+        #r2c2 div{
+            width: 100%;
+        }   
+        div#r2c2r1{
+            background-color: green;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        div#r2c2r2{
+            background-color: burlywood;
+            height: 340px;
+        }
+        #r3{
+            background-color: aqua;
+            padding-top: 20pt;
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="r1">Logo</div>
+    <div id="r2">
+        <div id="r2c1">Column 2</div>
+        <div id="r2c2">
+            <div id="r2c2r1">Column 3</div>
+            <div id="r2c2r2">Column 4</div>
+        </div>
+    </div>
+    <div id="r3">Column 5</div>
+</body>
+
+</html>
