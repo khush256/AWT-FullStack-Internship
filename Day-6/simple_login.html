@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .form{
+            /* height: 500px; */
+            /* width: 500px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* margin: auto; */
+            /* background-color: yellow; */
+        }
+        input[type=text], input[type=password]{
+            display: inline-block;
+            width: 100%;
+            margin:8px 0;
+            padding: 12px 20px;
+        }
+        button{
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: auto;
+            width: 100%;
+            border: none;
+            font-size: 18px;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+        .cancelbtn{
+            width: auto;
+            padding: 10px 8px;
+            background-color: #f44336ed;
+        }
+        .container{
+            padding:16px;
+            border-radius: 5px;
+        }
+        span.psw{
+            float: right;
+            padding-top: 16px;
+        }
+        h1{
+            text-align: center;
+        }
+        .inp{
+            font-size: 18px;
+        }
+        h2{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Login Form</h1>
+    <div class="form">
+    <form action="">
+        <div class="container" style="background-color: #6c8484;">
+            <label for="name"><h2>Username</h2></label>
+            <input type="text" name="name" placeholder="Enter Username" class="inp" required>
+            <label for="psw"><h2>Password</h2></label>
+            <input type="Password" name="psw" placeholder="Enter Password" class="inp" required>
+            <button type="Submit">Login</button>
+            <label for="">
+            <input type="checkbox" checked="checked">
+            I have read T&C
+            </label>
+        </div>
+        <div class="container" style="background-color: #f1f1f1;">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</div>
+</body>
+</html>
